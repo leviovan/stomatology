@@ -1,0 +1,571 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body{
+	height:2000px;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-family: 'Gilroy';
+}
+
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy-regular.eot');
+	src: local('☺'), url('fonts/gilroy-regular.woff') format('woff'), url('fonts/gilroy-regular.ttf') format('truetype'), url('fonts/gilroy-regular.svg') format('svg');
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy-medium.eot');
+	src: local('☺'), url('fonts/gilroy-medium.woff') format('woff'), url('fonts/gilroy-medium.ttf') format('truetype'), url('fonts/gilroy-medium.svg') format('svg');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Gilroy';
+	src: url('fonts/gilroy-bold.eot');
+	src: local('☺'), url('fonts/gilroy-bold.woff') format('woff'), url('fonts/gilroy-bold.ttf') format('truetype'), url('fonts/gilroy-bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+
+.container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+.menu{
+    display: flex;
+    height: 90px;
+    align-items: center;
+}
+.menu_bar{
+    height: 100%;
+    
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #C4C4C4;
+}
+
+.menu_bar__items{
+
+    display:flex;
+    height: 100%;
+    padding:  0px 30px;
+    border-left: 1px solid #C4C4C4;
+    font-size: 16px;
+    line-height: 19px;
+    flex: 0 1 auto;
+    align-items: center;
+    white-space:  nowrap;
+}
+.sotNet{
+	padding: 0px 28px;
+}
+.menu_bar__items:nth-child(1)
+{
+	padding-left:  0px;
+	padding-right:  90px;
+}
+.menu_bar__logo{
+	max-width: 170px;
+}
+
+
+
+.textOurSalon{
+    background: url("img/Group\ 1.svg")  no-repeat  ; 
+    /* background-color: #00868A; */
+    background-position: right center;
+    padding: 10px 35px 10px 0px ;
+}
+.texteye{
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+    background: url("img/simple-line-icons_eye.svg") 10px  12px no-repeat  ; 
+    background-color: #00868A;
+
+    padding: 15px 15px 10px 50px ;
+    color: white;
+}
+.content_kosmetolpgia{
+
+	width: 100%;
+	background: #4FBFA5;
+	
+}
+.content{
+	color: white;
+	padding-top: 30px;
+	display: flex;
+	flex-direction: column;
+	height: 700px;
+}
+.content_menu{
+	display: flex;
+	/* justify-content: space-between; */
+	max-width: 955px;
+}
+.content_menu_block{
+	width: 100%;
+	
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+}
+.content_menu_item{
+	margin-left: 65px;
+	white-space: nowrap;
+}
+.content_menu__link{
+	background-color: white;
+	color:black;
+	padding: 10px 15px ;
+	margin-left: 30px;
+}
+
+.content_main{
+	display: flex;
+	margin-top: 25px;
+	flex: 1 1 auto;
+
+}
+.content_main_text{
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	flex:1 1 35%;
+	flex-direction: column;
+	margin-left: 10px;
+}
+.content_main_img{
+	flex:1 1 60%;
+	background: url("img/Rectangle\ 7.png") no-repeat 100% 100%;
+
+}
+.content_main__text__block{
+	margin-top: 100px;
+	max-width: 420px;
+}
+.content_main_text__title{
+	font-weight: bold;
+	font-size: 48px;
+	margin-bottom: 30px;
+	}
+.content_main_text__text{
+	flex-basis: 50%;
+	font-size: 14px;
+	line-height: 150%;
+	margin-bottom: 40px;
+	font-weight: 300;
+}
+.content_main_text__link{
+	display: inline-block;
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 21px;
+	letter-spacing: 0.05em;
+	background: #00868A;
+	padding: 15px 25px;
+	color: white;
+}
+.content_main_text__switch_conrainer{
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+
+	
+}
+.content_main_text__switch{
+
+	max-width: 120px;
+	margin-top: 20px;
+	height: 50px;
+	border:1px solid white;
+	display: flex;
+	margin-right: 15px;
+
+
+}
+.content_main_text__switch__left{
+	border-right: 1px solid white;
+}
+.content_main_text__switch__right{
+	transform: rotate(180deg);
+}
+.block_switch{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+
+}
+.content_servises{
+	height: 80px;
+	display: flex;
+}
+.block {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-weight: 500;
+	font-size: 21px;
+	line-height: 150%;
+}
+.block a{
+	color:white;
+}
+.content_servises__block1{
+	background: #00868A;
+	
+	flex:1 1 50%;
+}
+.content_servises__block2{
+	flex:1 1 25%;
+	text-align:center;
+}
+.content_servises__block3{
+	background: #00868A;
+	flex:1 1 25%;
+	text-align:center;
+}
+.content_AboutUs{
+	margin-top: 80px;
+}
+.content_AboutUs__block{
+
+	display: flex;
+	justify-content: space-between;
+}
+.content_AboutUs__inovation {
+	color: white;
+	height: 580px;
+	display: flex;
+	flex-direction: column;
+	flex: 1 1 31%;
+	background-color: #00868A ;
+	
+}
+.content_AboutUs__EstetikaKrasoti{
+	flex: 1 1 50%;
+}
+.content_AboutUs__inovation__link{
+	color: white;
+	margin-top: 35px;
+	
+
+}
+.tag{
+	display: inline-block;
+	padding: 10px 15px;
+	background-color:#4FBFA5;
+	color:white;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+
+}
+.prodlojeniay__link{
+
+	margin-top: 30px;
+	margin-left: 30px;
+}
+.content_AboutUs__inovation__title{
+	margin-top: 30px;
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 150%;
+	margin-bottom: 35px;
+}
+.content_AboutUs__inovation__text{
+	margin-left: 40px;
+	flex: 1 1 60%;
+
+}
+.content_AboutUs__inovation__podrobnee{
+	display: inline-block;
+	font-size: 16px;
+	line-height: 150%;
+	font-weight: 500;
+}
+.content_AboutUs__inovation__img{
+	background: url(img/Rectangle\ 7.png) no-repeat center ;
+	flex: 1 1 40%;
+}
+.content_AboutUs__EstetikaKrasoti{
+	background: url(img/грамота.png) no-repeat right bottom;
+}
+.content_AboutUs__EstetikaKrasoti_block{
+	margin-left: 135px;
+	
+}
+.achivment__items{
+	margin-top: 45px;
+	opacity: 0.5;
+	font-weight: 500;
+	font-size: 12px;
+	line-height: 150%;
+	transition: 0.5s;
+	max-width: 215px;
+	display: flex;
+	align-items: center;
+}
+.achivment__items:before{
+	display: block;
+	content: "78";
+	font-size: 48px;
+	padding-right: 15px;
+	text-overflow: clip;
+}
+.achivment__items:nth-child(3):before{
+	content: "20";	
+}
+.achivment__items:hover{
+	opacity: 1;
+	max-width: 460px;
+	font-size: 28px;
+}
+
+.achivment__items:hover:before{
+	color: #00868A ;
+	font-size: 96px;
+}
+
+
+.block_new {
+	width: 100%;
+	display: flex;
+	height: 500px;
+	margin-top: 80px;
+}
+.block_new__news {
+	flex: 1 1 42%;
+	background-color: #4FBFA5;
+	display: flex;
+	flex-direction: column;
+}
+
+.block_new__recomendarion {
+	flex: 1 1 62%;
+	background-color: rgb(0, 134, 138,0.1);
+	padding-left: 60px;
+	padding-top: 35px;
+}
+.block_new__link{
+	color: white;
+	background-color: #00868A;
+	margin-top: 35px;
+	margin-bottom: 30px;
+	margin-left: 40px;
+	max-width: 100px;
+}
+.new{
+	transition: 0.4s;
+	display: flex;
+	align-items: center;
+	color: white;
+	flex: 1 0 20%;
+	padding: 0px 45px;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 150%;
+	cursor: pointer;
+	
+}
+
+.new:hover{
+	background-color: #00868A;
+
+}
+.block_new__recomendarion__title h2{
+	display: block;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 150%;
+	color: black;
+}
+.list__items{
+	max-width: 650px;
+	margin-top: 15px;
+	text-overflow: clip;
+	display: flex;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 21px;
+}
+.list__items:first-child{
+	margin-top: 25px;
+}
+.list__items::before{
+	content: url(img/tochka.svg);
+	margin-right: 15px;
+}
+.content_atkualniePredlojeniya{
+	background: rgb(2,0,36);
+background: linear-gradient(360deg, rgba(0,134,134,0) 35%,  rgba(94, 130, 131, 0.4) 100%);
+	margin-top: 100px;
+}
+.content_atkualniePredlojeniya__title{
+	font-weight: bold;
+	font-size: 48px;
+	line-height: 150%;
+	text-align: center;
+}
+.content_atkualniePredlojeniya__title a{
+	color: #00868A;
+	display: inline-block;
+	margin-top: 80px;
+}
+.content_atkualniePredlojeniya__content{
+	margin-top:70px;
+	display: flex;
+	justify-content: space-between;
+}
+.content_atkualniePredlojeniya__column{
+		width: 23.5%;
+		
+}
+.prodlojeniay{
+	display: flex;
+	flex-direction: column;
+	height: 350px;
+	margin-bottom: 100px;
+}
+.prodlojeniay__img{
+	width: 100%;
+	height: 230px;
+	background: url(img/Rectangle\ 23.png) 100% 100%  no-repeat ;
+	flex:1 1 75%;
+}	
+.prodlojeniay_title{
+	flex:1 1 25%;
+	/* background-color:#00868A ; */
+}
+.prodlojeniay_title__block{
+	font-weight: 300;
+	font-size: 21px;
+	line-height: 150%;
+	color: white;
+	background-color: #00868A;
+	
+}
+.prodlojeniay_title{
+	margin: 25px;
+}
+.servises_link a{
+	color: black;
+}
+.servises_link__title{
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 150%;
+	margin-bottom: 20px;
+}
+.servises_link__items {
+	margin-bottom: 25px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 150%;
+}
+.contakst_items {
+}
+.contakst__title {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	text-transform: uppercase;
+	color: #000000;
+	opacity: 0.5;
+	margin-bottom: 10px;
+}
+.contakst__text {
+	font-family: 'Gilroy';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 21px;
+	line-height: 150%;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.contakst {
+}
+.contakst_link {
+	color:white;
+	padding: 15px 25px;
+	background: #00868A;
+	margin-bottom: 30px;
+	display: inline-block;
+}
+
+
+.footer{
+	margin-top: 80px;
+	height: 90px;
+}
+
+.footer_menu_bar__items{
+
+    display:flex;
+    height: 100%;
+    padding:  0px 30px;
+    border-left: 1px solid rgb(196, 196, 196, 0.4);
+	border-top: 1px solid rgb(196, 196, 196, 0.4);
+
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 150%;
+    flex: 0 1 auto;
+    align-items: center;
+}
+.foot2021{
+
+	max-width: 370px;
+}
+
+.footer_menu_bar__items:nth-child(1)
+{
+	padding-top:20px;
+	padding-left:  25px;
+	padding-top:15px;
+}
+.footer_menu_bar__items:nth-child(2)
+{
+	border-left: none;
+}
